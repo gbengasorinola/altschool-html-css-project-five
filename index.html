@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/styles/index.css" />
+    <title>Checkout</title>
+  </head>
+  <body>
+    <nav>
+      <!-- Internal navigation -->
+      <div class="website-logo">
+        <img
+          class="wppusher-logo"
+          src="./assets/icons/WP Pusher Logo.png"
+          alt=""
+        />
+      </div>
+      <div class="website-navigation">
+        <a href="">Download</a>
+        <a href="">Learn more</a>
+        <a href="">Pricing</a>
+        <a href="">Help</a>
+        <a href=""><span class="a-account">Account</span></a>
+      </div>
+      <!-- Internal navigation -->
+    </nav>
+    <hr class="hr-nav" />
+    <main>
+      <div class="form-container">
+        <h1>Checkout</h1>
+        <hr class="hr-form" />
+        <form action="">
+          <section class="section-one-grid">
+            <div class="full-width-heading">
+              <img class="number-icon" src="./assets/icons/one.png" alt="" />
+              <h2>Your Basic Information</h2>
+            </div>
+            <div>
+              <label for="firstname">First name</label>
+              <input type="text" placeholder="Jane" required/>
+            </div>
+            <div>
+              <label for="lastname">Last name</label>
+              <input type="text" placeholder="Doe" required/>
+            </div>
+            <div class="full-width">
+              <label for="email">E-mail</label>
+              <input type="email" placeholder="janedoe@example.com" required/>
+            </div>
+          </section>
+          <hr class="hr-form" />
+          <section class="section-two-grid">
+            <div class="full-width-heading">
+              <img class="number-icon" src="./assets/icons/two.png" alt="" />
+              <h2>Your Payment Information</h2>
+            </div>
+            <div class="full-width">
+              <label for="credit-details">Credit Card</label>
+              <div class="card-full-width">
+                <input
+                  type="text"
+                  inputmode="numeric"
+                  pattern="[0-9\s]*"
+                  id="card-number"
+                  maxlength="19"
+                  placeholder="Card Number"
+                  required
+                />
+                <input
+                  type="text"
+                  inputmode="numeric"
+                  placeholder="MM/YY"
+                  maxlength="5"
+                  id="expiry-date"
+                  required
+                />
+                <input
+                  type="text"
+                  inputmode="numeric"
+                  placeholder="CVV"
+                  maxlength="4"
+                  id="cvv"
+                  required
+                />
+              </div>
+            </div>
+          </section>
+          <hr class="hr-form" />
+          <section class="section-three-grid">
+            <div class="full-width">
+              <button class="full-width">Buy WP Voucher</button>
+            </div>
+            <div class="contact-support">
+              <img class="help-icon" src="./assets/icons/help.png" alt="" />
+              <p class="p-form">
+                <span class="bold-p-form">Need any help?</span> Don't hesistate to
+                <span style="text-decoration: underline">contact support!</span>
+              </p>
+            </div>
+            <img
+              class="stripe-icon"
+              src="./assets/icons/Powered by Stripe.png"
+              alt=""
+            />
+          </section>
+        </form>
+      </div>
+      <div class="pricing">
+        <section class="pricing-details">
+
+          <h3>Freelancer</h3>
+
+          <p><sup>$</sup><span class="span-99">99</span><sub>/ year</sub></p>
+
+          <p class="pricing-description">Automatically renews after 1 year</p>
+
+          <ul>
+            <li>Use on 5 client sites</li>
+            <li>Private respositories</li>
+            <li>Email support</li>
+          </ul>
+
+          <p>Need <span class="p-bold">20</span> client sites?</p>
+
+          <p class="p-custom-line">Switch to the <span style="font-style: italic;">Agency</span> plan.</p>
+
+          <div class="p-underline"></div>
+        </section>
+
+        <hr class="hr-pricing" />
+
+        <section class="testimonial">
+          <p class="p-testimonial-one">
+            FTP is horrible to deal with. <span class="p-bold">WP Pusher</span>
+            solves that issue, and the customer support is awesome!
+          </p>
+          <div class="testimonial-user">
+            <img
+              class="img-testimonial"
+              src="./assets/icons/testimonial-image.png"
+              alt=""
+            />
+            <p class="p-testimonial-two">Kirk Beard</p>
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>

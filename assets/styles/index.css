@@ -1,0 +1,415 @@
+:root {
+    --bg-color: #F5F8FA;
+    --form-container-color: white;
+    --pricing-bg-color: #1179BF;
+    --input-bg-color: #EDEFF2;
+    --a-color: #1D2C3C;
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url(../fonts/Lato/Lato-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Lato-italic";
+    src: url(../fonts/Lato/Lato-Italic.ttf);
+}
+
+@font-face {
+    font-family: "Lato-bold";
+    src: url(../fonts/Lato/Lato-Bold.ttf);
+}
+
+html, body {
+    font-family: "Lato";  
+    max-width: 1440px;
+    background-color: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    max-width: 1360px;
+    height: 73px;
+    display: flex;
+}
+
+.wppusher-logo {
+    position: relative;
+    max-width: 200px;
+    width: 100%;
+    top: 18px;
+    left: 40px;
+}
+
+.website-navigation {
+    position: relative;
+    left: 2%;
+    display: flex;
+    margin-left: auto;
+    padding: 28px 0;
+    gap: 40px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--a-color);
+    padding-right: -50px;
+    font-weight: 700px;
+    font-size: 14px;
+    line-height: 16.8px;
+    letter-spacing: -0.01px;
+}
+
+.a-account {
+    border: solid 2px #646E7A;
+    border-radius: 6px;
+    padding: 10px 20px;
+}
+
+.hr-nav {
+    max-width: 1358px;
+    width: 100%;
+    height: 2px;
+    top: 305px;
+    left: 262px;
+    background-color: #E0E6EA;
+    border: solid 0.1px #E0E6EA;
+}
+
+main {
+    display: flex;
+    max-width: 892px;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 50px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 5px 15px 0px #0000000D;
+}
+
+.form-container {
+    background-color: var(--form-container-color);
+    max-width: 580px;
+    height: 795px;
+    margin: auto;
+}
+
+.hr-form {
+    width: 580px;
+    height: 2px;
+    top: 305px;
+    left: 262px;
+    background-color: #F5F7FA;
+    border: solid 0.1px #F5F7FA;
+}
+
+.section-one-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px 40px;
+    gap: 20px;
+}
+
+.section-two-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px 40px;
+    gap: 20px;
+}
+
+.section-three-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px 40px;
+    gap: 20px;
+}
+
+.full-width-heading {
+    grid-column: span 2;
+    display: flex;
+    align-items: center;
+}
+
+.number-icon {
+    position: relative;
+    max-width: 30px;
+    width: 100%;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 400px;
+    line-height: 16.8px;
+    color: #1D2C3C;
+}
+
+input[type = text], input[type = date] {
+    background-color: var(--input-bg-color);
+    padding-left: 10px;
+    box-sizing: border-box;
+    width: 227px;
+    height: 36px;
+    border: solid 0.1px #EDEFF2;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.full-width {
+    grid-column: span 2;
+}
+
+input[type = email] {
+    background-color: var(--input-bg-color);
+    padding-left: 10px;
+    box-sizing: border-box;
+    width: 370px;
+    height: 36px;
+    border: solid 0.1px #EDEFF2;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.card-full-width {
+    display: flex;
+    background-color: var(--input-bg-color);
+    border: solid 0.1px #EDEFF2;
+    box-sizing: border-box;
+    width: 483px;
+    height: 36px;
+    gap: 2px;
+    border-radius: 4px;
+    align-items: center;
+}
+
+#card-number {
+    background-color: var(--input-bg-color);
+    padding-left: 10px;
+    margin-top: 10px;
+    margin-left: 2px;
+    width: 300px;
+    height: 17px;
+    border-radius: 0%;
+    margin-bottom: 10px;
+}
+
+#expiry-date, #cvv {
+    background-color: var(--input-bg-color);
+    padding-left: 10px;
+    text-indent: 30px;
+    margin-top: 10px;
+    width: 91.5px;
+    height: 17px;
+    border-radius: 0%;
+    margin-right: 2px;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #038E7D;
+    box-sizing: border-box;
+    width: 483px;
+    height: 52px;
+    border: solid 0.1px #038E7D;
+    border-radius: 5px;
+    font-family: "Lato";
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21.6px;
+    letter-spacing: -0.39600005745887756px;
+    text-align: center;
+}
+
+.contact-support {
+    grid-column: span 2;
+    display: flex;
+    align-items: center;
+}
+
+.help-icon {
+    position: relative;
+    left: 82px;
+    width: 15px;
+    height: 15px;
+}
+
+.p-form {
+    font-size: 14px;
+    font-weight: 400px;
+    line-height: 16.8px;
+    letter-spacing: -0.009999999776482582px;
+    margin: auto;
+    color: #646E7A;
+}
+
+.bold-p-form {
+    font-weight: 700px;
+    font-size: 14px;
+    line-height: 16.8px;
+    letter-spacing: -0.01px;
+    color: #1D2C3C;
+}
+
+.stripe-icon {
+    position: relative;
+    width: 92px;
+    height: 20.1px;
+    left: 200px;
+}
+
+.pricing {
+    margin: auto;
+    background-color: var(--pricing-bg-color);
+    max-width: 312px;
+    height: 795px;
+    color: white;
+}
+
+.pricing-details {
+    padding: 20px 40px;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 400px;
+    line-height: 19.2px;
+    letter-spacing: -0.007999998517334461px;
+    text-align: left;
+}
+
+.span-99 {
+    font-size: 60px;
+    font-weight: 300;
+    line-height: 72px;
+    letter-spacing: -0.014999999664723873px;
+}
+
+sup {
+    position: relative;
+    top: -20px;
+    font-size: 1.2em;
+}
+
+ul {
+    list-style: none;
+    padding: 20px 0;
+}
+
+.pricing-description {
+    font-family: "Lato-italic";
+    padding-right: 60px;
+}
+
+ul li{
+    background: url(../icons/check.png) no-repeat left center;
+    background-size: 16px;
+    padding-left: 25px;
+    line-height: 2;
+}
+
+.p-underline {
+    position: relative;
+    display: flex;
+    width: 82%;
+    height: 4px;
+    opacity: 100%;
+    top: -20px;
+    z-index: 1;
+    background-color: #B9F5FF;
+}
+
+.p-custom-line {
+    font-family: "Lato-bold";
+    position: relative;
+    z-index: 2;
+}
+
+.p-bold {
+    font-family: "Lato-bold";
+}
+
+.hr-pricing {
+    width: 224px;
+    height: 2px;
+    opacity: 20.05%;
+    background-color: #FFFFFF;
+    border: solid 0.1px #FFFFFF;
+}
+
+.testimonial {
+    padding: 20px 40px;
+}
+
+.p-testimonial-one {
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.008999999612569809px;
+    text-align: left;
+}
+
+.testimonial-user {
+    display: flex;
+    margin-top: 30px;
+}
+
+.img-testimonial {
+    position: relative;
+    max-width: 40px;
+    width: 100%;
+    height: 40px;
+    top: 6px;
+    border-radius: 100%;
+}
+
+.p-testimonial-two {
+    font-family: "Lato-bold";
+    margin-left: 20px;
+}
+
+h1 {
+    padding: 20px 0;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: left;
+    padding-left: 40px;
+    color: #1D2C3C;
+    text-shadow: 0px 4px 4px #00000040;
+}
+
+h2 {
+    font-family: "Lato-bold";
+    font-size: 18px;
+    line-height: 21.6px;
+    letter-spacing: -0.16px;
+    color: #1D2C3C;
+    padding-left: 10px;
+}
+
+h3 {
+    font-family: "Lato-bold";
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: -0.009999999776482582px;
+    text-align: left;
+}
+
+::placeholder {
+    font-family: "Lato";
+    font-size: 14px;
+    font-weight: 400px;
+    line-height: 16.8px;
+    text-align: left;
+}
